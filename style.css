@@ -85,7 +85,7 @@
 }
 
 .about-actor-left>h3 span {
-    color: #e2a750;
+    color: #50e2db;
 }
 
 .button-horizental>a {
@@ -154,7 +154,8 @@
 }
 
 .section-titel.style-3 h2 span {
-    color: #e2a750;
+    color: #50e2db;
+    s
 }
 
 .section-titel {
@@ -1487,9 +1488,9 @@ ul.gallery-menu li:hover {
 }
 
 .pro-mre-btn>a:hover {
-    background: #e2a750;
+    background: #50e2db;
     color: #fff;
-    border-color: #e2a750;
+    border-color: #50e2db;
 }
 
 .slider-area.actor.production .slide-content h2 {
@@ -1615,8 +1616,8 @@ ul.gallery-menu li:hover {
 }
 
 .button-rectangle>a {
-    border: 1px solid #e2a750;
-    color: #e2a750;
+    border: 1px solid #50e2db;
+    color: #50e2db;
     display: inline-block;
     font-family: "Orbitron", sans-serif;
     font-size: 14px;
@@ -1626,9 +1627,9 @@ ul.gallery-menu li:hover {
 }
 
 .button-rectangle>a:hover {
-    border-color: #e2a750;
+    border-color: #50e2db;
     color: #fff;
-    background: #e2a750;
+    background: #50e2db;
 }
 
 .home-production .about-actor-left>h3 {
@@ -4085,7 +4086,7 @@ ul.pstr_rating {
 /* ============= 27. ScrollUp ============= */
 
 #scrollUp {
-    background: #e2a750 none repeat scroll 0 0;
+    background: #50e2db none repeat scroll 0 0;
     border-radius: 0px;
     bottom: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
