@@ -1,0 +1,215 @@
+/* =======================================
+	
+	Template: Flim Studio
+
+========================================== */
+header {
+	position: relative;
+}
+.header-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.festival-header-menu {
+	background-color: #05192f;
+}
+.festival-header-menu::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: #e2a750;
+	width: 37%;
+	z-index: -1;
+}
+.mobile-menu-area {
+  display: none;
+}
+.main-menu nav ul li {
+  display: inline-block;
+}
+.main-menu nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 28px 16px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.main-menu nav ul li.active a,.main-menu nav ul li:hover a{color:#e2a750;}
+.main-menu nav ul li > ul {
+  background: #000 none repeat scroll 0 0;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  opacity: 0!important;
+  padding: 15px 25px;
+  position: absolute;
+  text-align: left;
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden!important;
+  width: 230px;
+  z-index: -9999;
+  top:180px;
+}
+.main-menu ul li ul li {
+  display: block;
+  position: relative;
+}
+.main-menu ul li ul > li > a {
+  border-bottom: 1px dashed #fff;
+  color: #fff !important;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  overflow: hidden;
+  padding: 20px 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul li ul > li:last-child > a {
+  border: medium none;
+}
+.main-menu ul li ul > li > a:hover{color:#e2a750!important;margin-left:4px;}
+.main-menu ul li:hover ul {
+  opacity: 1!important;
+  visibility: visible!important;
+  z-index: 999;
+  top:73px;
+}
+
+.main-menu ul > li > ul > li > ul.sub-menu {
+  background-color: #000000;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+  left: 100%;
+  right: 0;
+  list-style: none;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  z-index: -999!important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  margin-top: 30px;
+  transition: all 0.3s ease 0s;
+  padding-left: 40px;
+}
+.main-menu ul > li > ul > li:hover > ul.sub-menu {
+  margin-top: 0!important;
+  opacity: 1!important;
+  visibility: visible!important;
+  z-index: 999!important;
+}
+
+.main-menu ul li ul > li > a i {
+  float: right;
+}
+.header-style-2 .slide-menu-wrapper {
+  display: inline-block;
+  position: relative;
+}
+.header .trigger-menu-icon {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  outline: medium none;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+  width: 35px;
+  cursor: pointer;
+}
+.header .trigger-menu-icon span {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  height: 1px;
+  margin: 8px 0;
+  transform-origin: center center 0;
+  transition: all 0.5s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+}
+.header .trigger-menu-icon.is-active span {
+  opacity: 0;
+  visibility: hidden;
+}
+.header .trigger-menu-icon.is-active span:first-child {
+  margin-bottom: -9px;
+  opacity: 1;
+  transform: rotate(-45deg);
+  visibility: visible;
+}
+.header .trigger-menu-icon.is-active span:last-child {
+  margin-top: -8px;
+  opacity: 1;
+  transform: rotate(45deg);
+  visibility: visible;
+}
+.header-style-2 .slide-menu-inner {
+  position: absolute;
+  right: 100%;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+.header-style-2 nav.menu ul {
+  opacity: 0;
+  padding-right: 20px;
+  transform: scaleX(0);
+  transform-origin: 100% 0 0;
+  transition: all 0.8s cubic-bezier(0.6, 0.02, 0.35, 0.99) 0s;
+  visibility: hidden;
+  white-space: nowrap;
+}
+.header-style-2 .slide-menu-inner.is-visible ul {
+  opacity: 1;
+  transform: scaleX(1);
+  visibility: visible;
+}
+ /*Sticky Menu*/
+.sticky {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: #000 none repeat scroll 0 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  margin-top: 0 !important;
+}
+.sticky .main-menu nav ul li a{padding: 25px 16px;}
+.sticky .main-menu ul li:hover ul {
+  top: 67px;
+}
+.sticky .main-menu ul li ul > li > a{padding:20px 0px;}
+.header.header-style-2.sticky .trigger-menu-icon {
+  margin: 12px 0;
+}
+.sticky .main-menu ul li:hover ul.sub-menu {
+  top: 0;
+}
+
+
+
+.mean-container .mean-bar {
+	min-height: auto;
+	background-color: transparent;
+}
+.mean-container .mean-bar::after {
+	display: none;
+}
+.mean-container a.meanmenu-reveal {
+	padding: 0;
+	margin-top: -47px;
+}
